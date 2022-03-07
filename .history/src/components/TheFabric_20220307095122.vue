@@ -117,21 +117,6 @@
         }
       }
     })
-     new fabric.Image.fromURL(
-        'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F7%2F579ef51984b03.jpg%3Fdown&refer=http%3A%2F%2Fpic1.win4000.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1645254573&t=8d5d6a37242b1f29fa71b46841250556',
-        (oImg) => {
-          //   let ratio = scaleImg(oImg.width, oImg.height);
-          //   width = parseInt(oImg.width * ratio);
-          //   height = parseInt(oImg.height * ratio);
-          oImg.scale(0.5)
-          canvas.add(oImg)
-        },
-        {
-          // zIndex: -1,
-          selectable: false,
-          types: 'image'
-        }
-      )
   }
   function submit(){
     console.log(canvas.getObjects());
